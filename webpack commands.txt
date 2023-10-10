@@ -1,0 +1,41 @@
+cmd >>
+
+node --version
+
+install webpack
+npm instal --save-dev webpack@5.75.0
+
+//  for short
+npm instal -D
+
+// for production
+npm instal -S
+
+
+//install webpack CLI
+npm i -D webpack-cli@5.0.1
+
+// if the packege installed correctly you have to see it in "package.json" file
+
+add to script section in "package.json" file - you can use any word not dev 
+
+"build" : "webpack --mode=development"
+
+run the command: npm run build
+
+create sre folder andd all file inside it
+----------------
+
+add "webpack.config.js" in the root with these configs
+
+const path = require('path');
+
+module.exports = {
+  mode: 'development',
+  entry: { 
+    app: "./src/index.js"},
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
+  },
+};
