@@ -16,6 +16,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #000;
+    overflow-x: hidden;
 }
 
 .custom-dropdown-menu {
@@ -77,10 +78,7 @@ body {
     height: 36px;
     width: 65px;
 
- 
- 
-
-}
+  }
 .search-btn:hover,
 .search-btn:focus,
 .search-btn:active,
@@ -123,3 +121,108 @@ body {
     margin-left: 15px;
 }
 
+/* carousel section */
+#carousel-featured{
+  background-color: #f7f8f3;
+  height: 400px;
+  padding-top: 25px;
+}
+
+#carousel-featured .carousel-item img {
+  height: 375px;
+}
+
+#carousel-featured .product-details {
+  border: #ddd 1px solid;
+  padding: 20px;
+  position: relative;
+  top: 50px;
+
+}
+#carousel-featured .product-details .product-category {
+  border: #ddd 1px solid;
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  background-color: #F7F8F3;
+}
+#carousel-featured .product-details h1{
+  font-weight: 500;
+  font-size: 175%;
+  margin-top: 18px;
+}
+
+#carousel-featured .product-details .custom-btn-outline-warning {
+  color: orange;
+  border: orange 1px solid;
+  border-radius: 0%;
+}
+
+
+
+#carousel-featured .product-details a {
+  margin-top: 15px;
+}
+
+.custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:focus,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning.active:focus,
+.custom-btn-outline-warning.active:hover{
+
+background-color: orange;
+color: #000 !important;
+}
+
+#carousel-featured .product-details .sale {
+  background-color: #53CCD7;
+  color: #fff;
+  position: absolute;
+}
+
+#carousel-featured .product-details .sale.large {
+  background-color: #53CCD7;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  border-radius: 50%;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  line-height: 1.1;
+  transform: rotate(-25deg);
+  flex-direction: column;
+
+}
+
+.custom-carousel-indicators-primary {
+  height: 50px !important;
+  width: 50px !important;
+  opacity: 1 !important;
+  border: 1px #ddd solid !important;
+  margin: 0;
+}
+
+.custom-carousel-indicators {
+  position: absolute;
+  top : 210px;
+  right: 47%;
+}
+
+.custom-carousel-indicators-primary.active {
+
+  border: 1px orange solid !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  color: #777 !important;
+  font-size: 30px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+
+  color: orange !important;
+}
