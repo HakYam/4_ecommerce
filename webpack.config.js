@@ -40,7 +40,7 @@ module.exports = {
               esModule: false
             }
           },
-          "rtlcss-loader" 
+          "css-loader" 
         ]
       },
       {
