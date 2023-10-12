@@ -228,7 +228,7 @@ color: #000 !important;
 }
 
 #store-features {
-  box-shadow: #eef0ea 0px 0px 15px;
+  box-shadow: #eef0ea 0px 0px 25px;
 background-image: url(../images/bg_features.png);
 background-repeat: no-repeat;
 position: relative;
@@ -250,7 +250,100 @@ margin-bottom: 10px;
 
 }
 
-/* تحديد اول فيشر والفيشر الذي يليه وبالتالي لن يتك تحديد الاخير لان ليس لديه اخ تالي */
+/* تحديد اول فيشر والفيشر الذي يليه وبالتالي لن يتم تحديد الاخير لان ليس لديه اخ تالي */
 #store-features .feature+.feature { 
 border-right: #eef0ea 1px solid;
+}
+
+.heading {
+  margin-bottom: 25px;
+
+}
+
+.custom-thumbnail img {
+  height: 250px;
+  width: 100% ;
+  max-width: 250px;
+
+}
+
+.custom-carousel-indicators2 li {
+  
+  background-color: #838383 !important;
+  width: 13px !important;
+  height: 13px !important;
+  margin: 4px !important;
+
+
+}
+.custom-carousel-indicators2 {
+  bottom: -70px !important;
+}
+
+.custom-thumbnail {
+ padding: 8px;
+ cursor: pointer;
+
+}
+
+.custom-thumbnail:hover {
+  border-color: #53CCD7;
+}
+
+.custom-thumbnail h4 {
+  font-size: 18px;
+}
+
+.price {
+  color: #53CCD7;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.rating {
+  color: #c2c2c2;
+}
+
+.rating .active {
+  color: orange;
+}
+
+.overlay{
+  position: absolute;
+  background-color: rgba(83, 204, 215, 0.5);
+  height: 250px;
+  width: calc(100% - 16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.add-to-cart-btn {
+  background-color: #fff;
+  color: #53CCD7;
+}
+
+
+.add-to-cart-btn:hover {
+  background-color: #fff;
+  color: #53CCD7;
+}
+
+.custom-thumbnail .sale {
+  padding: 5px 10px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #53CCD7;
+  color: #fff;
+}
+
+.custom-thumbnail .sale::after {
+  content: "-";
 }
