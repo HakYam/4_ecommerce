@@ -1,0 +1,13 @@
+// close terminal Ctrl+c
+
+// add modified files
+git add .
+
+// commit files
+git commit -m "messag to you or other team"
+
+// push files
+git push origin
+
+// in case of error use the folloing command
+git push -f origin

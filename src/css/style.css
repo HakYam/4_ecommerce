@@ -226,3 +226,31 @@ color: #000 !important;
 
   color: orange !important;
 }
+
+#store-features {
+  box-shadow: #eef0ea 0px 0px 15px;
+background-image: url(../images/bg_features.png);
+background-repeat: no-repeat;
+position: relative;
+top: -30px;
+background-size: auto 60%;
+background-color: #fff;
+padding-top: 25px;
+padding-bottom: 25px;
+background-position: -10px -20px;
+}
+
+#store-features .feature {
+  padding-top: 10px;
+}
+
+#store-features .feature>img {
+height: 40px;
+margin-bottom: 10px;
+
+}
+
+/* تحديد اول فيشر والفيشر الذي يليه وبالتالي لن يتك تحديد الاخير لان ليس لديه اخ تالي */
+#store-features .feature+.feature { 
+border-right: #eef0ea 1px solid;
+}

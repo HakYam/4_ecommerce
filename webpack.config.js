@@ -16,7 +16,9 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
+    // hot: false,
     port: 9000,
+    open: true,
     devMiddleware: {
       writeToDisk: true
     }
