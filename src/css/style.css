@@ -153,10 +153,10 @@ body {
   margin-top: 18px;
 }
 
-#carousel-featured .product-details .custom-btn-outline-warning {
-  color: orange;
-  border: orange 1px solid;
-  border-radius: 0%;
+ .custom-btn-outline-warning {
+  color: orange !important;
+  border: orange 1px solid !important;
+  border-radius: 0% !important;
 }
 
 
@@ -263,7 +263,6 @@ border-right: #eef0ea 1px solid;
 .custom-thumbnail img {
   height: 250px;
   width: 100% ;
-  max-width: 250px;
 
 }
 
@@ -311,7 +310,7 @@ border-right: #eef0ea 1px solid;
 .overlay{
   position: absolute;
   background-color: rgba(83, 204, 215, 0.5);
-  height: 250px;
+  height: calc(100% - 82px);
   width: calc(100% - 16px);
   display: flex;
   justify-content: center;
@@ -346,4 +345,53 @@ border-right: #eef0ea 1px solid;
 
 .custom-thumbnail .sale::after {
   content: "-";
+}
+
+#carousel-most-sold .carousel-inner .carousel-item img {
+flex: 1;
+}
+
+.carousel-item .card{
+display: flex;
+align-items: stretch;
+}
+
+/* brand section */
+.panel {
+border: 1px #c2c2c2 solid;
+border-radius: 2px;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.panel .carousel-inner .float-start {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.panel .clearfix .float-start {
+  margin-top: 10px;
+}
+
+.row-brands {
+  margin-top: 90px;
+}
+
+.row-brands .heading {
+
+  border-top: #ebebeb 1px solid;
+  padding-top: 20px;
+}
+
+.arrow-btn {
+  background-color: #fff;
+  color:#868686 ;
+  border: 1px #ebebeb solid;
+  border-radius: 2px;
+}
+.arrow-btn:hover {
+  color:#000 ;
+  border: 1px #ebebeb solid;
+  border-radius: 2px;
 }
