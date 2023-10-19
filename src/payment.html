@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر عربي | صفحة الدفع</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- القائمة العلوية -->
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container px-0">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars  fa-lg"></i>
+                        </button>
+                        <a href="./checkout.html" class="btn-icon btn d-lg-none " title="عربة الشراء"
+                            data-bs-placement="bottom"><i class="fa-solid fa-cart-shopping fa-lg "></i> </a>
+                        <a href="#" class="me-5">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <form action="" class="d-flex inline-form ">
+                        <input type="search" class="form-control custom-form-control " placeholder="بحث...">
+                        <div class="dropdown mt-2" id="dropdown">
+                            <a ref="#" class="van-link dropdown-toggle custom-btn categories" id="navbarDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">اختر فئة</a>
+                            <ul class="dropdown-menu custom-dropdown-menu" id="dropdown1">
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <input type="checkbox" value="men" name="search-category">
+                                        <label class="ps-1">رجالي </label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <input type="checkbox" value="women" name="search-category">
+                                        <label class="ps-1">نسائي </label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <input type="checkbox" value="baby" name="search-category">
+                                        <label class="ps-1"> أطفال </label>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <bottom class="btn search-btn" type="submit">ابحث</button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link  dropdown-toggle" id="navbarDropdown2" role="button" href="#"
+                                    data-bs-toggle="dropdown" aria-expanded="false">أقسام المتجر </a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item"> رجالي </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">نسائي </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">أطفال </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./search.html">البحث المتقدم </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تواصل معنا</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="./checkout.html" class="btn-icon btn d-none d-lg-block" id="btn-shopping-cart"
+                                    title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i
+                                        class="fa-solid fa-cart-shopping fa-lg"></i> </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <!-- نهاية القائمة العلوية -->
+
+
+
+        <!-- القائمة الفرعية -->
+        <div class="container">
+            <div class="row" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li class="breadcrumb-item"><a href="./">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="checkout.html">عربة الشراء </a></li>
+                    <li class="breadcrumb-item active"><a href="payment.html">صفحة الدفع </a></li>
+                </ol>
+            </div>
+            <!-- تموذح الدفع الالكتروني -->
+            <form id="form-chechout">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <h4 class="mb-4">بياناتك الشخصية</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder="الاسم" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder="الكنية" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control custom-form-control custom-input-details"
+                                    placeholder="البريد الالكتروني" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder="المنطقة" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select name="country" class="form-select custom-form-control custom-input-details"
+                                    placeholder="الدولة" required>
+                                    <option disabled selected value="">اختر دولة</option>
+                                    <option value="eg">مصر</option>
+                                    <option value="ksa">السعودية </option>
+                                    <option value="sy">سوريا</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select name="city"
+                                    class="form-select form-control custom-form-control custom-input-details"
+                                    placeholder="المدينة" required>
+                                    <option disabled selected value="">اختر المدينة</option>
+
+
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                    class="form-control form-control custom-form-control custom-input-details"
+                                    placeholder="العنوان" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    placeholder="رقم الهاتف" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder=" العنوان الثاني (اختياري)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h4 class="mb-4 "> بيانات الدفع</h4>
+                        <div class="row">
+
+                            <div class="col-md-6 ">
+                                <label>
+                                    <input type="radio" name="payment-method"
+                                        class="form-check-input custom-input-details" value="creditCard" checked>
+
+                                    البطاقة الائتمانية
+                                </label>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label>
+                                    <input type="radio" name="payment-method"
+                                        class="form-check-input custom-input-details" value="onDelivery">
+                                    الدفع عند التسليم
+
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="row" id="creditCardInfo">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    name="credit_card_number" placeholder="رقم البطاقة" required>
+
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    name="credit_card_expiryMonth" placeholder="شهر الانتهاء " required min="1"
+                                    max="12">
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    name="credit_card_expiryYear" placeholder="سنة الانتهاء " required min="2020"
+                                    max="2035">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    name="credit_card_CVV" placeholder="CVV" required>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <div class=" borders-between ">
+                <div class="row" >
+                    <h4 class="heading custom-heading pt-5"> طلبك</h4>
+                    <form action="./payment.html" id="form-checkout" class="ps-0" >
+                        <table class="custom-table ">
+                            <thead>
+                                <tr>
+                                    <th>المنتج</th>
+                                    <th>السعر</th>
+                                    <th>العدد المطلوب</th>
+                                    <th class="d-none d-md-block">الإجمالي</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr data-product-info data-product-price="400">
+                                    <td>
+                                        <div class="custom-media d-flex">
+                                            <img src="./images/adidas_3.png" alt="فلورا تي شيرت"
+                                                class="d-none d-md-block">
+                                            <div>
+                                                <h4>فلورا تي شيرت</h4>
+                                                <div class="custom-text-muted">
+                                                    ملابس رجالي
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        400$
+                                    </td>
+                                    <td>
+                                        <select name="product" class="custom-form-control" data-product-quantity>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3" selected>3</option>
+                                        </select>
+                                    </td>
+                                    <td class="total-price-for-product">
+                                        1200$
+                                    </td>
+                                    <td>
+                                        <button class="btn custom-btn-outline-danger deleteProduct"><span
+                                                class="d-none d-md-block">حذف</span>
+                                            <i class="fa-solid fa-trash-can d-md-none d-block"></i>
+                                        </button>
+
+                                    </td>
+                                </tr>
+
+                                <tr data-product-info data-product-price="199.9">
+                                    <td>
+                                        <div class="custom-media d-flex">
+                                            <img src="./images/adidas_2.jpg" alt="فلورا تي شيرت"
+                                                class="d-none d-md-block">
+                                            <div>
+                                                <h4> حذاء رياضي </h4>
+                                                <div class="custom-text-muted">
+                                                    ملابس رجالي
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        199.9$
+                                    </td>
+                                    <td>
+                                        <select name="product" class="custom-form-control quantity"
+                                            data-product-quantity>
+                                            <option value="1" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="total-price-for-product">
+                                            199.9$
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn custom-btn-outline-danger deleteProduct"><span
+                                                class="d-none d-md-block">حذف</span>
+                                            <i class="fa-solid fa-trash-can d-md-none d-block"></i>
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5" class="total-price ">
+                                        <span class="custom-text-muted">السعر الاجمالي لجميع المنتجات</span>
+                                        <span id="total-price-for-all-product">1400</span>
+                                        <span class="custom-text-muted">دولار</span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <button type="submit" class="btn custom-btn-warning custom-btn-with-icon ms-3 mb-4">
+                            <span>
+                                إكمال عملية الشراء
+                                <i class="fas fa-dollar-sign fa-lg"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="row">
+        <div id="brand-logo" class="text-center">
+            <span>المتجر وكيل مُعتمد لكبرى الشركات العالمية</span>
+            <div class="img-container">
+                <img src="./images/adidas.png" alt="">
+                <img src="./images/polo.png" alt="">
+                <img src="./images/puma.png" alt="">
+                <img src="./images/lacoste.png" alt="">
+            </div>
+        </div>
+
+        <div id="footer-nav" class="text-center">
+            <div class="footer-logo">
+                <a href="./">
+                    <img src="./images/logo_footer.png" alt="">
+                </a>
+            </div>
+            <div class="footer-nav-links">
+                <a href="./">الرئيسية</a>
+                <a href="./search.html">البحث المتقدم</a>
+                <a href="./contact.html">تواصل معنا</a>
+            </div>
+            <div class="newsletter  col-md-6 offset-md-3 align-items-center d-flex justify-content-center">
+                <form class="w-100">
+                    <label>أدخل بريدك الإلكتروني لمتابعة آخر العروض</label>
+                    <br>
+                    <div class="input-group ">
+                        <input type="email" class="form-control custom-form-control" placeholder=" بريدك الإلكتروني">
+                        <button type="submit" class="btn custom-btn-warning">متابعة</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="footer-copyright-social">
+            <div class="container">
+                <div class="clearfix">
+                    <div id="copyright" class="float-start">
+                        <p>جميع الحقوق محفوظة &copy; <span id="year"></span> تصميم المهندس هاكان يمان</p>
+                    </div>
+                    <div id="social-icons" class="float-end">
+                        <a href="#"><i class="fab fa-facebook-square fa-xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-x-twitter fa-xl"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square fa-xl"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- container-fluid -->
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>

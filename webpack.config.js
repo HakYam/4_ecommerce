@@ -16,7 +16,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
-    // hot: false,
+     hot: true,
     port: 9000,
     open: true,
     devMiddleware: {
@@ -81,6 +81,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'product.html',
       template: './src/product.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'checkout.html',
+      template: './src/checkout.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'payment.html',
+      template: './src/payment.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'search.html',
+      template: './src/search.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'css/style.css'

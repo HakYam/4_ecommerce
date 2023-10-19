@@ -18,11 +18,12 @@
 }
 
 
-body {
+html, body {
   font-family: 'JF-Flat-Regular', sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #000;
+  overflow-x: hidden !important;
 
 
 }
@@ -450,7 +451,8 @@ body {
 
 .footer-nav-links a {
   color: #555;
-  margin-left: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -491,6 +493,7 @@ footer .newsletter form label {
   color: #000;
   background-color: orange;
   border-color: orange;
+  border-radius: 0;
 
 
 }
@@ -662,6 +665,79 @@ thats mean first div will not selected as it not folloed by div */
 .comments .comment p {
   color: #555;
 }
+
+/* checout page */
+.custom-media img {
+  width: 80px;
+  height: 80px;
+  border: #ebebeb solid 1px;
+  margin-left: 10px;
+}
+
+.custom-table th,
+.custom-table td {
+  vertical-align: middle;
+  padding: 15px;
+  border-bottom: 1px #ebebeb solid;
+  border-top: 1px #ebebeb solid;
+  font-size: 120%;
+}
+
+.custom-table h4{
+  font-size: 18px;
+  margin: 12px 0;
+
+}
+
+.custom-table .custom-text-muted {
+  color: #c2c2c2;
+}
+
+.custom-table th {
+  color: #c2c2c2;
+  font-weight: normal;
+}
+
+.custom-table th:first-child,
+.custom-table td:first-child {
+  width: 50% !important;
+}
+
+.custom-table th:not(:first-child),
+.custom-table td:not(:first-child) {
+  text-align: center;
+  
+}
+h1.custom-heading {
+  font-size: 25px;
+}
+
+.custom-table tfoot td  {
+  border-bottom: none;
+}
+
+.custom-btn-outline-danger {
+  border-color: #c2101f;
+  color: #c2101f;
+}
+
+.custom-btn-outline-danger:hover,
+.custom-btn-outline-danger:focus,
+.custom-btn-outline-danger:active,
+.custom-btn-outline-danger.active:focus,
+.custom-btn-outline-danger.active:hover {
+  background-color: #c2101f;
+  color: #fff;
+}
+
+/* payment page */
+.custom-input-details {
+  border-radius: 3px;
+
+}
+
+
+
 /* break points */
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
@@ -677,7 +753,9 @@ thats mean first div will not selected as it not folloed by div */
     margin-top: 20px;
   }
 
-
+.custom-text-muted {
+  font-size: smaller;
+}
 
 
   .custom-thumbnail img {
