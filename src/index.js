@@ -1,6 +1,6 @@
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
-import "bootstrap/dist/css/bootstrap.min.css"
+import "./sass/custom.scss" // BS 5 included inside it
 import "./css/style.css"
 import "@fortawesome/fontawesome-free/js/all.js"
 import "./sass/style.scss"
