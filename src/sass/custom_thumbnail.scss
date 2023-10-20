@@ -1,0 +1,31 @@
+.custom-thumbnail {
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $brand-primary;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+
+        @media (max-width: 767.98px) {
+            width: 60%;
+            height: auto;
+            transform: translateX(-35%);
+
+        }
+
+        @media (max-width: 575.98px) {
+            width: 60%;
+            height: auto;
+            transform: translateX(-35%);
+
+    }
+}
+}

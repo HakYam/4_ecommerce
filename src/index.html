@@ -1,107 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="معلومات السيو هنا لمحركات البحث">
-    <title>Arabi Store Ecommerce</title>
+    <title>متجر عربي</title>
 </head>
-
 <body>
-
-    <!-- Header bar -->
-    <!-- container-fluid 100% width -->
     <div class="container-fluid">
+        <!-- القائمة العلوية --> 
         <div class="row">
             <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container px-0">
                     <div class="navbar-header">
-                        <button class="navbar-toggler btn btn-icon " type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fa-solid fa-bars  fa-lg"></i>
-                        </button>
-                        <a href="./checkout.html" class="btn-icon btn d-lg-none "
-                                    title="عربة الشراء" data-bs-placement="bottom"><i
-                                        class="fa-solid fa-cart-shopping fa-lg "></i> </a>
+                        <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars fa-xl"></i>
+                          </button>
+                          <a class="btn-icon btn d-lg-none" href="./checkout.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
                         <a href="#" class="me-5">
-                            <img src="images/logo.png" alt="logo">
+                            <img src="./images/logo.png" alt="متجر عربي">
                         </a>
                     </div>
                     <form action="" class="d-flex inline-form">
-                        <input type="search" class="form-control custom-form-control " placeholder="بحث...">
-                        <div class="dropdown mt-2" id="dropdown">
-                            <a ref="#" class="van-link dropdown-toggle custom-btn categories" id="navbarDropdown"
-                                data-bs-toggle="dropdown" aria-expanded="false">اختر فئة</a>
-                            <ul class="dropdown-menu custom-dropdown-menu" id="dropdown1">
+                        <input type="search" class="form-control custom-form-control" placeholder="كلمة البحث ....">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle custome-dropdown-toggle custom-btn categories" id="navbarDropdown" 
+                            role="button" data-bs-toggle="dropdown" area-expanded="false">اختر فئة</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
                                 <li>
                                     <div class="checkbox ms-2">
-                                        <input type="checkbox" value="men" name="search-category">
-                                        <label class="ps-1">رجالي </label>
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="men">
+                                            رجالي
+                                        </label>
                                     </div>
                                 </li>
-
                                 <li>
                                     <div class="checkbox ms-2">
-                                        <input type="checkbox" value="women" name="search-category">
-                                        <label class="ps-1">نسائي </label>
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="women">
+                                            نسائي
+                                        </label>
                                     </div>
                                 </li>
-
                                 <li>
                                     <div class="checkbox ms-2">
-                                        <input type="checkbox" value="baby" name="search-category">
-                                        <label class="ps-1"> أطفال </label>
-
+                                        <label>
+                                            <input type="checkbox" name="search-category" value="kids">
+                                            أطفال
+                                        </label>
                                     </div>
                                 </li>
-
                             </ul>
                         </div>
-                        <bottom class="btn search-btn" type="submit">ابحث</button>
+                        <button type="submit" class="btn search-btn">ابحث</button>
                     </form>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <div class="collapse navbar-collapse"  id="navbarCollapse">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#" aria-current="page">الرئيسية</a>
+                                <a href="#" class="nav-link" aria-current="page">الصفحة الرئيسية </a>
                             </li>
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link  dropdown-toggle" id="navbarDropdown2" role="button" href="#"
-                                    data-bs-toggle="dropdown" aria-expanded="false">أقسام المتجر </a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">أقسام المتجر</a>
                                 <ul class="dropdown-menu custom-dropdown-menu">
                                     <li>
-                                        <a href="#" class="dropdown-item"> رجالي </a>
+                                        <a class="dropdown-item" href="#">رجالي</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown-item">نسائي </a>
+                                        <a class="dropdown-item" href="#">نسائي</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown-item">أطفال </a>
+                                        <a class="dropdown-item" href="#">أطفال</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="./search.html">البحث المتقدم </a>
+                            <li class="nav-item">
+                                <a href="./search.html" class="nav-link">البحث المتقدم</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">تواصل معنا</a>
+                                <a href="./contact.html" class="nav-link">تواصل معنا</a>
                             </li>
                             <li class="mt-2">
-                                <a href="./checkout.html" class="btn-icon btn d-none d-lg-block" id="btn-shopping-cart"
-                                    title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i
-                                        class="fa-solid fa-cart-shopping fa-lg"></i> </a>
+                                <a class="btn-icon btn d-none d-lg-block" id="btn-shopping-cart" href="./checkout.html" 
+                                title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
-
             </nav>
         </div>
-
-    
-    <!-- End of header bar -->
+        <!-- نهاية القائمة العلوية -->
     
     <div class="row">
         <div id="carousel-featured" class="carousel slide" data-bs-ride="carousel">
@@ -246,6 +239,7 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 ">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn ">
                                             إضافة إلى العربة
@@ -257,7 +251,9 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                        </a>
                                         </div>
+
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
                                             <i class="fa-solid fa-star active"></i>
@@ -274,6 +270,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4 ">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة إلى العربة
@@ -285,6 +282,7 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
@@ -302,6 +300,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="sale">50%</div>
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
@@ -314,6 +313,7 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                    </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
@@ -331,6 +331,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4 d-none d-lg-block">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة إلى العربة
@@ -342,6 +343,7 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                    </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
@@ -364,18 +366,23 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة إلى العربة
                                             <i class="fas fa-cart-plus"></i>
                                         </button>
                                     </div>
+                                    
                                     <img src="./images/most_sold_2.jpg" alt="فلورا تي شيرت">
                                     <div class="card-body p-2">
+                                        
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                        </a>
                                         </div>
+                                        
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
                                             <i class="fa-solid fa-star active"></i>
@@ -392,6 +399,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة إلى العربة
@@ -403,6 +411,7 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                    </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
@@ -420,6 +429,7 @@
                             </div>
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة إلى العربة
@@ -431,6 +441,7 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fa-regular fa-star"></i>
@@ -448,6 +459,8 @@
                             </div>
                             <div class="col-lg-3 col-md-4 d-none d-lg-block">
                                 <div class="card custom-thumbnail">
+                                
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة إلى العربة
@@ -459,6 +472,7 @@
                                         <div class="clearfix">
                                             <h4 class="float-start">فلورا تي شيرت</h4>
                                             <div class="price float-end">$ 200 </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fa-solid fa-star active"></i>
@@ -482,6 +496,7 @@
                             <!--منتج-->
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail" data-product="">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة للعربة
@@ -495,6 +510,7 @@
                                             <div class="price float-end">
                                                 100$
                                             </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fas fa-star active"></i>
@@ -515,6 +531,7 @@
                             <!--منتج-->
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail" data-product="">
+                                    <a href="./product.html">
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة للعربة
@@ -528,6 +545,7 @@
                                             <div class="price float-end">
                                                 150$
                                             </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fas fa-star active"></i>
@@ -548,6 +566,8 @@
                             <!--منتج-->
                             <div class="col-lg-3 col-md-4">
                                 <div class="card custom-thumbnail" data-product="">
+                                    <a href="./product.html">
+                                  
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
                                             إضافة للعربة
@@ -561,6 +581,7 @@
                                             <div class="price float-end">
                                                 85$
                                             </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fas fa-star active"></i>
@@ -581,6 +602,7 @@
                             <!--منتج-->
                             <div class="col-lg-3 col-md-4 d-none d-lg-block">
                                 <div class="card custom-thumbnail" data-product="">
+                                    <a href="./product.html">
                                     <div class="sale">50%</div>
                                     <div class="overlay">
                                         <button class="btn add-to-cart-btn">
@@ -595,6 +617,7 @@
                                             <div class="price float-end">
                                                 $ 200
                                             </div>
+                                        </a>
                                         </div>
                                         <div class="rating">
                                             <i class="fas fa-star active"></i>
@@ -647,6 +670,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card custom-thumbnail">
+                            <a href="./product.html">
                             <div class="overlay">
                                 <button class="btn add-to-cart-btn">
                                     إضافة إلى العربة
@@ -658,6 +682,7 @@
                                 <div class="clearfix">
                                     <h4 class="float-start">فلورا تي شيرت</h4>
                                     <div class="price float-end">$ 200 </div>
+                                </a>
                                 </div>
                                 <div class="rating">
                                     <i class="fa-solid fa-star active"></i>
@@ -675,6 +700,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card custom-thumbnail">
+                            <a href="./product.html">
                             <div class="overlay">
                                 <button class="btn add-to-cart-btn">
                                     إضافة إلى العربة
@@ -686,6 +712,7 @@
                                 <div class="clearfix">
                                     <h4 class="float-start">فلورا تي شيرت</h4>
                                     <div class="price float-end">$ 200 </div>
+                                </a>
                                 </div>
                                 <div class="rating">
                                     <i class="fa-solid fa-star active"></i>
@@ -703,6 +730,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card custom-thumbnail">
+                            <a href="./product.html">
                             <div class="overlay">
                                 <button class="btn add-to-cart-btn">
                                     إضافة إلى العربة
@@ -714,6 +742,7 @@
                                 <div class="clearfix">
                                     <h4 class="float-start">فلورا تي شيرت</h4>
                                     <div class="price float-end">$ 200 </div>
+                                </a>
                                 </div>
                                 <div class="rating">
                                     <i class="fa-solid fa-star active"></i>
@@ -731,6 +760,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card custom-thumbnail">
+                            <a href="./product.html">
                             <div class="overlay">
                                 <button class="btn add-to-cart-btn">
                                     إضافة إلى العربة
@@ -742,6 +772,7 @@
                                 <div class="clearfix">
                                     <h4 class="float-start">فلورا تي شيرت</h4>
                                     <div class="price float-end">$ 200 </div>
+                            </a>
                                 </div>
                                 <div class="rating">
                                     <i class="fa-solid fa-star active"></i>
@@ -759,6 +790,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card custom-thumbnail">
+                        <a href="./product.html">
                             <div class="overlay">
                                 <button class="btn add-to-cart-btn">
                                     إضافة إلى العربة
@@ -770,6 +802,7 @@
                                 <div class="clearfix">
                                     <h4 class="float-start">فلورا تي شيرت</h4>
                                     <div class="price float-end">$ 200 </div>
+                                </a>
                                 </div>
                                 <div class="rating">
                                     <i class="fa-solid fa-star active"></i>

@@ -1,0 +1,43 @@
+
+
+.custom-btn-outline-warning {
+
+    @include button-style-outline($brand-warning)
+}
+
+
+
+.custom-btn-warning {
+@include button-style($brand-warning)
+  }
+  
+  .custom-btn-outline-danger {
+    @include button-style($brand-danger)
+}
+
+  .search-btn {
+    @include button-style($brand-danger)
+}
+
+
+  .search-btn {
+    background-color: $brand-danger;
+    border-radius: 0;
+    color: #fff;
+    padding: 5px 16px 5px;
+    height: 36px;
+    width: 65px;
+  
+  }
+  
+  .carousel-control-prev:hover,
+.carousel-control-next:hover {
+
+  color: $brand-warning !important;
+}
+
+.custom-pagination li.page-item.active .page-link {
+    background-color: $brand-warning !important;
+    border: 1px $brand-warning solid;
+    color: #fff !important;
+  }

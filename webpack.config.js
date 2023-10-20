@@ -1,9 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+  devtool: 'eval-source-map',
   mode: 'development',
   entry: {
     app: "./src/index.js"
@@ -16,11 +18,12 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
-     hot: true,
+    hot: true,
     port: 9000,
     open: true,
+    liveReload: true,
     devMiddleware: {
-      writeToDisk: true
+      writeToDisk: false
     }
   },
   module: {
@@ -29,11 +32,11 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
         options: {
-          minimize: true,
+          minimize: false,
         }
       },
       {
-        test: /\.css$/i,
+        test: /\.(sa|sc|c)ss$/,
         exclude: /bootstrap\.min\.css$/i,
         use: [
           {
@@ -42,7 +45,8 @@ module.exports = {
               esModule: false
             }
           },
-          "css-loader" 
+          "css-loader", 
+          "sass-loader",
         ]
       },
       {
@@ -94,9 +98,18 @@ module.exports = {
       filename: 'search.html',
       template: './src/search.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'contact.html',
+      template: './src/contact.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/style.css'
     }),
-    new CssMinimizerPlugin()
-  ]
+    new CssMinimizerPlugin(),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://localhost:9000/'  // Assuming webpack dev server runs on port 9000
+    }),
+  ],
 };
