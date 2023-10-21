@@ -48,14 +48,21 @@ a {
   padding: 7px 7px;
 }
 
+.custom-navbar .btn-icon.navbar-toggler {
+  padding-top: 5px !important;
+}
+
 .custom-navbar .btn-icon {
   color: #777;
   border: #ddd 1px solid;
   background-color: transparent;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding-top: 10px;
   margin-right: 15px;
+  height: 40px;
 }
+
+
 
 /* carousel section .*/
 #carousel-featured {
@@ -163,6 +170,7 @@ a {
 .rating {
   color: #c2c2c2;
 }
+
 .overlay {
   position: absolute;
   background-color: rgba(83, 204, 215, 0.5);
@@ -237,13 +245,7 @@ a {
   color: #555;
 }
 
-#brand-logo img {
-  margin-left: 25px;
-  margin-right: 25px;
-  max-width: 100px;
-  max-height: 100px;
-  padding-top: 16px;
-}
+
 
 /* footer */
 #footer-nav {
@@ -517,6 +519,7 @@ ul {
 
 /* `sm` applies to x-small devices ( portrait phones, less than 576px ) */
 @media (max-width: 575.98px) {
+
   .add-to-cart-btn,
   .add-to-cart-btn:hover {
     display: none;
@@ -542,6 +545,8 @@ ul {
 
     display: none !important;
   }
+
+
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -558,6 +563,7 @@ ul {
   .custom-carousel-indicators {
     margin-right: 40px !important;
   }
+
   .add-to-cart-btn,
   .add-to-cart-btn:hover {
     display: none;
@@ -571,6 +577,7 @@ ul {
     background-position: 110%;
 
   }
+
   .overlay {
     display: none !important;
   }
@@ -671,6 +678,7 @@ ul {
   .product-images {
     margin-bottom: 60px;
   }
+
   .product-option {
     width: 40px;
     height: 40px;
@@ -693,6 +701,7 @@ ul {
     margin: 1px !important;
     padding-top: 12px !important;
   }
+
   .custom-carousel-indicators {
     margin-right: 80px;
   }

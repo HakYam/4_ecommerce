@@ -118,7 +118,29 @@
     line-height: 1.1;
     transform: rotate(-25deg);
     flex-direction: column;
-  
+
+    @media (max-width: 575.98px) {
+      left: -5px;
+
+}
+
+
+  }
+
+  #brand-logo img {
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 100px;
+    max-height: 100px;
+    padding-top: 16px;
+
+    @media (max-width: 575.98px) {
+      margin-left: 10px;
+    margin-right: 10px;
+    max-width: 70px;
+
+
+}
   }
 
 
