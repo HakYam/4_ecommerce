@@ -1,9 +1,15 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
-$warning : red;
+$warning : #FBBC04;
 
+// Then add it to your custom theme-colors map
 $theme-colors: (
-    "warning": $warning
+  warning: $warning,
+  // ... include other colors if necessary
 );
 
 $input-btn-padding-y: 0.575rem;
+
+@import '../../node_modules/bootstrap/scss/bootstrap';

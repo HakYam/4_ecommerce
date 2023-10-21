@@ -122,10 +122,10 @@ document.querySelector('select[name="country"]').addEventListener('change', upda
 
 //show credit cart row
 // Ensure the DOM is fully loaded before running the script
-document.addEventListener('DOMContentLoaded', () => {
+
   // Set the default display style for #creditCardInfo
   document.querySelector('#creditCardInfo').style.display = '';
-});
+
 
 document.querySelectorAll('[name="payment-method"]').forEach(method => {
   method.addEventListener('change', () => {

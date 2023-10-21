@@ -2,6 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
+
 const path = require('path');
 
 module.exports = {
@@ -13,6 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
+    clean: true,
   },
   devServer: {
     static: {
@@ -112,5 +115,6 @@ module.exports = {
       port: 3000,
       proxy: 'http://localhost:9000/'  // Assuming webpack dev server runs on port 9000
     }),
+
   ],
 };

@@ -10,7 +10,7 @@
     &.active:hover {
         color: lighten($color, 100%); //white
         border-color: darken($color, 20%);
-        background-color: darken($color, 20%);
+        background-color: lighten($color, 7%);
     }
 }
 
